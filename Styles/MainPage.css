@@ -1,0 +1,306 @@
+/* Использование 10 разных селекторов для галочки (потом удалить) */
+* {margin: 0; padding: 0;}
+
+h1 {font-family: Arial, Helvetica, sans-serif;}
+
+#ButtonGoToTheFullCatalog{ background-color: #FFC227; }
+#ButtonGoToTheFullCatalog:hover{ background-color: #ffd978; }
+
+img[alt="meme"] { display: none;}
+
+h1 ~ div {color: black;}
+h1:first-letter {font-weight: bold;}
+/* Использование 10 разных селекторов для галочки (потом удалить)
+Остальные селекторы можно найти внизу (они помечены комментариями)*/
+
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 0px;
+}
+
+.Container{
+    min-width: 1512px;
+}
+
+.Header {
+    display: flex;
+    height: 28mm;
+    width: auto;
+    background-color: #FFC227;
+
+    border-bottom: 5px solid lightgray;
+    
+}
+
+.Content {
+    height: auto;
+    background-color: whitesmoke;
+}
+
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    height: 33mm;
+    background-color: #B3B3B3;
+}
+.FooterContainer{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.FooterContainer > h1{ /*Использование дочернего селектора*/
+    margin: 20px;
+}
+.FooterContainer div{ /*Использование селектора потомка*/
+    margin: 0 20px 0  20px;
+    color: black;
+}
+.FooterContainer a{
+    margin: 0 20px 0  20px;
+    color: black;
+}
+.MainFooterContainer{
+    display: block;
+}
+.NameDeveloper {
+    margin: 20px;
+    align-content: center;
+}
+
+
+.Logo{
+
+    display: flex;
+    margin-left: 0mm;
+    width: 100mm;
+    height: 28mm;
+    
+    text-decoration: none;
+    color: black;
+
+} 
+
+.LogoImage img{
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+    width: 49mm;
+    height: 49mm;
+}
+.LogoImage{
+    width: 49mm;
+    height: 49mm;
+    border-radius: 50%;
+}
+
+.LogoSiteName{
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+    background-color: #4E99D2;
+    border-radius: 0 1em 1em 0;
+    border: solid 2px black;
+    width: 51mm;
+
+    pointer-events: none;
+    cursor: default;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    color: #FFFF66;
+    font-weight: bold;
+}
+
+.MenuContainer{
+    display: flex;
+    height: 14mm;
+    width:100%;
+}
+
+.Button{
+    font-size: 20px;
+    margin-right: 2.5mm;
+    margin-left: 2.5mm;
+    padding: 2mm;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid 2px black;
+    border-radius: 4px;
+    background-color: #4E99D2;
+    color: black;
+    height: auto;
+    width: auto;
+    text-decoration: none;
+
+}
+.Button:hover { /*Использование селектора псевдокласса*/
+    background-color: #427fae;
+}
+
+.ButtonMainPage{
+    margin-left: 0mm;
+}
+
+.ButtonShoppingCart img{
+    margin-left: 3px;
+}
+
+.ButtonFavourites {
+    margin-left: 13mm;
+}
+
+.ButtonFavourites img{
+    margin-left: 3px;
+}
+
+.ContainerPlaceAnOrder{
+    margin-left: 2.5mm;
+}
+
+.ButtonPlaceAnOrder{
+    margin: 0px;
+    padding: 1mm;
+}
+
+.ContainerTotalPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.TelegramHrefContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.TelegramHrefContainer a {
+    font-size: 20px;
+    Color: black;
+}
+
+.SearchContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13mm;
+}
+.SearchContainer input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 319px;
+}
+.SearchContainer button{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 36px;
+}
+.SearchContainer button:hover {
+    background-color: lightgray;
+}
+
+.SearchContainer form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.LoginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13mm;
+}
+.LoginContainer a{
+    font-size: 20px;
+    Color: black;
+}
+
+.ChoiceCityContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13mm;
+}
+.ChoiceCityContainer select{
+    height: 36px;
+    width: 160px;
+    text-align: center;
+    padding: 0mm;
+}
+
+.CategoryContainer{
+    padding: 5mm;
+    padding-bottom: 2mm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.Category{
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+    margin-left: 3mm;
+    margin-right: 3mm;
+
+    min-width: 68mm;
+    min-height: 52mm;
+    width: 68mm;
+    height: 52mm;
+
+    border: solid 3px black;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Category img {
+    position: absolute;
+    z-index: 10;
+    max-width: 68mm;
+    max-height: 52mm;
+}
+.Category a {
+    min-width: 68mm;
+    min-height: 52mm;
+    
+    position: absolute;
+    z-index: 30;
+    border-radius: 10%;
+}
+.Category a:hover{
+    background-color: #6c6c6c67;
+}
+
+.Category h1{
+    position: absolute;
+    z-index: 20;
+    bottom: 0px;
+    margin-bottom: 10px;
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+.ButtonGoToTheFullCatalogContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5mm;
+}
