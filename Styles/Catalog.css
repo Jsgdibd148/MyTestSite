@@ -1,0 +1,294 @@
+* {margin: 0; padding: 0;}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding-bottom: 0px;
+}
+
+.SiteContainer{
+    min-width: 1512px;
+}
+
+/* Header */
+.Header {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 28mm;
+    background-color: #FFC227;
+    border-bottom: 5px solid lightgray;
+}
+
+/* Логотип */
+.Logo{
+    display: flex;
+    width: 100mm;
+    height: 28mm;
+    text-decoration: none;
+} 
+
+.LogoImage img{
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+    width: 49mm;
+    height: 49mm;
+}
+.LogoImage{
+    width: 49mm;
+    height: 49mm;
+    border-radius: 50%;
+}
+
+.LogoSiteName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+
+    background-color: #4E99D2;
+    border-radius: 0 1em 1em 0;
+    border: solid 2px black;
+    width: 51mm;
+    font-size: 22px;
+    color: #FFFF66;
+    font-weight: bold;
+    pointer-events: none;
+}
+/* Логотип */
+
+.MainMenuContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:flex-end;
+    min-width: 1064px;
+}
+
+.MenuContainer{
+    display: flex;
+    justify-content: space-between;
+    min-height: 14mm;
+    width:100%;
+}
+
+/*Верхняя часть меню*/
+.TelegramHrefContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.TelegramHrefContainer a {
+    font-size: 20px;
+    Color: black;
+}
+
+.SearchContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SearchContainer input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 319px;
+}
+.SearchContainer button{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 36px;
+}
+.SearchContainer button:hover {
+    background-color: lightgray;
+}
+
+.SearchContainer form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginContainer a{
+    font-size: 20px;
+    Color: black;
+}
+
+.ChoiceCityContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ChoiceCityContainer select{
+    min-height: 36px;
+    width: 165px; 
+    text-align: center;
+    padding: 0mm;
+}
+/*Верхняя часть меню*/
+
+/*Нижняя часть меню*/
+.RightMenuButtons{
+    display: flex;
+    justify-content: space-between;
+    min-width: 490px;
+}
+.LeftMenuButtons{
+    display: flex;
+    justify-content: space-between;
+    min-width: 472px;
+}
+.Button{
+    font-size: 20px;
+    padding: 2mm;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid 2px black;
+    border-radius: 4px;
+    background-color: #4E99D2;
+    color: black;
+}
+.Button:hover { /*Использование селектора псевдокласса*/
+    background-color: #427fae;
+}
+
+.ButtonPlaceAnOrder{
+    padding: 1mm;
+}
+
+.ContainerTotalPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+/*Нижняя часть меню*/
+/* Header */
+
+/* Content */
+.Content {
+    padding: 7mm;
+    padding-top: 10mm;
+    /* background-color: whitesmoke; */
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+}
+.ProductContainer{
+    display: flex;
+}
+
+
+/* Панель фильтров */
+aside {
+    width: 68mm;
+    background-color: lightgray;
+    border: solid 3px #B3B3B3;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+aside h1{
+    font-size: 42px;
+}
+aside label{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.SortContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.SortContainer label{
+    font-size: 16px;
+}
+.FilterForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.FilterForm input{
+    padding: 8px;
+    font-size: 16px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+#SelectCategory{
+    background-color: whitesmoke;
+    min-height: 36px;
+    width: 100%; 
+    text-align: center;
+    padding: 0mm;
+}
+/* Панель фильтров */
+
+
+section{
+    width: 100%;
+    background-color: blue;
+}
+.PaginationContainer{
+    background-color: green;
+}
+
+.Products{
+}
+/* Content */
+
+/* Footer */
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    height: 33mm;
+    background-color: #B3B3B3;
+}
+.FooterContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.FooterContainer > h1{ /*Использование дочернего селектора*/
+    margin: 20px;
+}
+.FooterContainer div{ /*Использование селектора потомка*/
+    margin: 0 20px 0  20px;
+    color: black;
+}
+.FooterContainer a{
+    margin: 0 20px 0  20px;
+    color: black;
+}
+.MainFooterContainer{
+    display: flex;
+    flex-direction: column;
+}
+.NameDeveloper {
+    margin: 20px;
+    align-content: center;
+}
+/* Footer */
+
+
+
+
+
+
