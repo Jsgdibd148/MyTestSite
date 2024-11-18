@@ -1,4 +1,6 @@
-<html lang="ru"><head>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
     <meta data-n-head="1" charset="utf-8">
     <title>Кронос Крепёж</title>
     <link rel="stylesheet" href="Styles/MainPage.css"> 
@@ -11,16 +13,17 @@
 </head>
 
 <body>
-    <div class="Container">
+    <div class="SiteContainer">
 
         <div class="Header">
+            <div class="LogoContainer">
+                <a href="index.html" class="Logo"> <!--ЛОГОТИП-->
+                    <div class="LogoImage"><img src="Images/logo_without_name.png" alt=""></div>
+                    <div class="LogoSiteName">Кронос Крепёж</div>
+                </a>
+            </div>
 
-            <a href="index.html" class="Logo"> <!--ЛОГОТИП-->
-                <div class="LogoImage"><img src="Images/logo_without_name.png" alt=""></div>
-                <div class="LogoSiteName">Кронос Крепёж</div>
-            </a>
-
-            <div style="margin-left: 10mm;">
+            <div class="MainMenuContainer">
                 <div class="MenuContainer"> <!-- Верхняя часть меню-->
                     <div class="TelegramHrefContainer">
                         <a href="https://t.me/KronosKrep" target="_blank">Наш телеграмм: @KronosKrep</a>
@@ -41,37 +44,41 @@
                             <option value="Chelyabinsk">Челябинск</option>
                             <option value="Moscow">Москва</option>
                             <option value="Vladimir">Владимир</option>
-                            <option value="Vladimir">Владивосток</option>
+                            <option value="Vladivostok">Владивосток</option>
+                            <option value="Nizhniy Novgorod">Нижний Новгород</option>
                         </select>
                     </div>
                 </div> 
 
                 <div class="MenuContainer"> <!-- Нижняя часть меню-->
-                    <button class="Button ButtonMainPage" onclick="window.location.href='index.html'">Главная</button>
-                    <button class="Button ButtonCatalog" onclick="window.location.href='index.html'">Каталог</button>
-                    <button class="Button ButtonDeliveryAndPayment" onclick="window.location.href='index.html'">Доставка и оплата</button>
-                    <button class="Button ButtonAboutUs" onclick="window.location.href='index.html'">О нас</button>
-                    <button class="Button ButtonFavourites" onclick="window.location.href='index.html'">
-                        Избранное
-                        <img src="Images/Favourites.ico" alt="">
-                    </button>
-                    <button class="Button ButtonShoppingCart" onclick="window.location.href='index.html'">
-                        Корзина
-                        <img src="Images/ShoppingCart.ico" alt="">
-                    </button>
-                    <div class="ContainerPlaceAnOrder">
-                        <div class="ContainerTotalPrice">
-                            <div class="TextTotalPrice">Итого:</div>
-                            <div class="TotalPrice">10000 ₽</div>
-                        </div>
-                        <button class="Button ButtonPlaceAnOrder" onclick="window.location.href='index.html'">Оформить заказ</button>
+                    <div class="RightMenuButtons">
+                        <button class="Button ButtonMainPage" onclick="window.location.href='index.html'">Главная</button>
+                        <button class="Button ButtonCatalog" onclick="window.location.href='index.html'">Каталог</button>
+                        <button class="Button ButtonDeliveryAndPayment" onclick="window.location.href='index.html'">Доставка и оплата</button>
+                        <button class="Button ButtonAboutUs" onclick="window.location.href='index.html'">О нас</button>
                     </div>
+                    <div class="LeftMenuButtons">
+                        <button class="Button ButtonFavourites" onclick="window.location.href='index.html'"> Избранное
+                            <img src="Images/Favourites.ico" alt="">
+                        </button>
+                        <button class="Button ButtonShoppingCart" onclick="window.location.href='index.html'"> Корзина
+                            <img src="Images/ShoppingCart.ico" alt="">
+                        </button>
+                        <div class="ContainerPlaceAnOrder">
+                            <div class="ContainerTotalPrice">
+                                <div class="TextTotalPrice">Итого:</div>
+                                <div class="NumberTotalPrice">10000 ₽</div>
+                            </div>
+                            <button class="Button ButtonPlaceAnOrder" onclick="window.location.href='index.html'">Оформить заказ</button>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
 
         <div class="Content">
-            <div class="CategoryContainer">
+            <div class="CategoriesContainer">
                 <div class="Category">
                     <a href="index.html"></a>
                     <img src="Images/screws.png" alt="">
@@ -148,6 +155,7 @@
                     <h1>Шурупы</h1>
                 </div>
             </div>
+            
             <div class="ButtonGoToTheFullCatalogContainer">
                 <button class="Button" id="ButtonGoToTheFullCatalog" onclick="window.location.href='index.html'">Перейти в полный каталог</button>
             </div>
@@ -172,7 +180,8 @@
                 <div>Иванов В.С.</div>
             </div>
         </div>
-        <img src="Images/Meme.jpg" alt="meme">
+
+        <img src="Images/Meme.jpg" alt="meme"> <!-- Для того, чтобы использовать 10 разных видов селекторов-->
     </div>
 
 </body></html>
