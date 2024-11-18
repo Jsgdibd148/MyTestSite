@@ -1,7 +1,7 @@
 /* Использование 10 разных селекторов для галочки (потом удалить) */
 * {margin: 0; padding: 0;}
 
-h1 {font-family: Arial, Helvetica, sans-serif;}
+h1 {font-family: "Noto Sans", sans-serif;}
 
 #ButtonGoToTheFullCatalog{ background-color: #FFC227; }
 #ButtonGoToTheFullCatalog:hover{ background-color: #ffd978; }
@@ -13,9 +13,20 @@ h1:first-letter {font-weight: bold;}
 /* Использование 10 разных селекторов для галочки (потом удалить)
 Остальные селекторы можно найти внизу (они помечены комментариями)*/
 
+/* Header */
+.Header {
+    display: flex;
+    height: 28mm;
+    width: auto;
+    background-color: #FFC227;
+
+    border-bottom: 5px solid lightgray;
+}
+
+/* Header */
 
 body{
-    font-family: Arial, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     margin: 0;
     padding-bottom: 0px;
 }
@@ -24,15 +35,7 @@ body{
     min-width: 1512px;
 }
 
-.Header {
-    display: flex;
-    height: 28mm;
-    width: auto;
-    background-color: #FFC227;
 
-    border-bottom: 5px solid lightgray;
-    
-}
 
 .Content {
     height: auto;
