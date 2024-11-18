@@ -47,7 +47,7 @@ body{
     margin-top: 5mm;
     margin-bottom: 5mm;
 
-    background-color: #4E99D2;
+    background-color: #247dff;
     border-radius: 0 1em 1em 0;
     border: solid 2px black;
     width: 51mm;
@@ -182,7 +182,7 @@ body{
 .Content {
     padding: 7mm;
     padding-top: 10mm;
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-content:center;
@@ -233,7 +233,7 @@ aside label{
 }
 
 #SelectCategory{
-    background-color: whitesmoke;
+    
     min-height: 36px;
     width: 100%; 
     text-align: center;
@@ -241,17 +241,84 @@ aside label{
 }
 /* Панель фильтров */
 
-
+/* Панель с карточками товаров */
 section{
     width: 100%;
-    background-color: blue;
 }
 .PaginationContainer{
     background-color: green;
 }
-
-.Products{
+.ProductsContainer{
+    padding: 5mm;
+    padding-bottom: 2mm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
 }
+.Product{
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+    margin-left: 3mm;
+    margin-right: 3mm;
+    width: 255px;
+    height: 285px;
+    border: solid 3px black;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.Product:hover{
+    border: solid 3px #FFC227;
+}
+.Product a{
+    position: absolute;
+    z-index: 50;
+    height: max-content;
+    width: 68mm;
+    height: 285px;
+    top: 0;
+    right: 0;
+}
+.Product a:hover{
+    background-color: #6c6c6c67;
+    border-radius: 10%;
+    /* border: solid 5px #FFC227; */
+}
+.ProductImg{
+    height: 180px;
+    border-bottom: solid 3px black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.ProductImg h3{
+    border: solid 3px black;
+    background-color: #FFC227;
+    padding: 3px;
+}
+.ProductImg img{
+    scale: 90%;
+    width: 255px;
+    height: 180px;
+    border-radius: 10%;
+
+}
+.ProductImg h3{
+    position: absolute;
+    z-index: 40;
+}
+.ProductText{
+    width: 241px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    background-color: lightgray;
+    border-radius: 0 0 25px 25px;
+}
+/* Панель с карточками товаров */
 /* Content */
 
 /* Footer */
