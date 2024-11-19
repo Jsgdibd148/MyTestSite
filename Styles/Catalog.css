@@ -245,9 +245,6 @@ aside label{
 section{
     width: 100%;
 }
-.PaginationContainer{
-    background-color: green;
-}
 .ProductsContainer{
     padding: 5mm;
     padding-bottom: 2mm;
@@ -284,7 +281,6 @@ section{
 .Product a:hover{
     background-color: #6c6c6c67;
     border-radius: 10%;
-    /* border: solid 5px #FFC227; */
 }
 .ProductImg{
     height: 180px;
@@ -317,6 +313,24 @@ section{
     padding: 7px;
     background-color: lightgray;
     border-radius: 0 0 25px 25px;
+}
+
+
+.PaginationContainer{
+    /* background-color: whitesmoke; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PaginationContainer button{
+    margin: 3px;
+    width: 50px;
+    background-color: #FFC227;
+}
+.PaginationContainer label{
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 20px;
 }
 /* Панель с карточками товаров */
 /* Content */
