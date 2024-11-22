@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta data-n-head="1" charset="utf-8">
+    <title>Кронос Крепёж</title>
+    <link rel="stylesheet" href="Styles/MainPage.css"> 
+
+    <!-- Шрифт из Google fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+    <!-- Шрифт из Google fonts -->
+</head>
+
+<body>
+    <div class="SiteContainer">
+
+        <div class="Header">
+            <div class="LogoContainer">
+                <a href="index.html" class="Logo"> <!--ЛОГОТИП-->
+                    <div class="LogoImage"><img src="Images/logo_without_name.png" alt=""></div>
+                    <div class="LogoSiteName">Кронос Крепёж</div>
+                </a>
+            </div>
+
+            <div class="MainMenuContainer">
+                <div class="MenuContainer"> <!-- Верхняя часть меню-->
+                    <div class="TelegramHrefContainer">
+                        <a href="https://t.me/KronosKrep" target="_blank">Наш телеграмм: @KronosKrep</a>
+                    </div>
+                    <div class="SearchContainer">
+                        <form action="/search" method="get">
+                            <input type="text" placeholder="Поиск:" required="">
+                            <button type="submit">
+                                <img src="Images/Search.ico" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="LoginContainer">
+                        <a href="index.html" target="_blank">Вход в ЛК</a>
+                    </div>
+                    <div class="ChoiceCityContainer">
+                        <select id="city" name="city" class="Button">
+                            <option value="Chelyabinsk">Челябинск</option>
+                            <option value="Moscow">Москва</option>
+                            <option value="Vladimir">Владимир</option>
+                            <option value="Vladivostok">Владивосток</option>
+                            <option value="Nizhniy Novgorod">Нижний Новгород</option>
+                        </select>
+                    </div>
+                </div> 
+
+                <div class="MenuContainer"> <!-- Нижняя часть меню-->
+                    <div class="RightMenuButtons">
+                        <button class="Button ButtonMainPage" onclick="window.location.href='index.html'">Главная</button>
+                        <button class="Button ButtonCatalog" onclick="window.location.href='Catalog.html'">Каталог</button>
+                        <button class="Button ButtonDeliveryAndPayment" onclick="window.location.href='index.html'">Доставка и оплата</button>
+                        <button class="Button ButtonAboutUs" onclick="window.location.href='index.html'">О нас</button>
+                    </div>
+                    <div class="LeftMenuButtons">
+                        <button class="Button ButtonFavourites" onclick="window.location.href='index.html'"> Избранное
+                            <img src="Images/Favourites.ico" alt="">
+                        </button>
+                        <button class="Button ButtonShoppingCart" onclick="window.location.href='index.html'"> Корзина
+                            <img src="Images/ShoppingCart.ico" alt="">
+                        </button>
+                        <div class="ContainerPlaceAnOrder">
+                            <div class="ContainerTotalPrice">
+                                <div class="TextTotalPrice">Итого:</div>
+                                <div class="NumberTotalPrice">10000 ₽</div>
+                            </div>
+                            <button class="Button ButtonPlaceAnOrder" onclick="window.location.href='index.html'">Оформить заказ</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="Content">
+            <video autoplay controls src= "Videos/Never_Gonna_Give_You_Up.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="Footer">
+            <div class="MainFooterContainer">
+                <div class="FooterContainer">
+                    <h1>ООО «Кронос крепеж плюс»</h1>
+                    <div>Адрес: г. Владимир, ул. Электрозаводская, д. 2</div>
+                </div>
+                <div class="FooterContainer">
+                    <div> © Все права защищены </div>
+                    <a href="tel:+74922530522"> +7 (4922) 530-522 </a>
+                    <a href="tel:+79056135995"> +7 (905) 613-59-95 </a>
+                    <a href="mailto:cronosplus@gmail.com"> cronosplus@gmail.com </a>
+                    
+                </div>
+            </div>
+            <div class="NameDeveloper"> 
+                <div>Разработчик:</div>
+                <div>Иванов В.С.</div>
+            </div>
+        </div>
+
+        <img src="Images/Meme.jpg" alt="meme"> <!-- Для того, чтобы использовать 10 разных видов селекторов-->
+    </div>
+</body>
+</html>
